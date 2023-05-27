@@ -1,0 +1,55 @@
+.root {
+  width: 790px;
+  height: 368px;
+  border-radius: 6px;
+  margin-right: 40px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.root:last-child {
+  margin-right: 0;
+}
+
+.title {
+  composes: title from global;
+  font-size: 41px;
+  color: #fff;
+  line-height: 61.5px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  composes: paragraph from global;
+  font-size: 20px;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 41px;
+}
+
+.button {
+  composes: subtitle from global;
+  display: inline-block;
+  padding: 15px 32px;
+  border-radius: 180px;
+  background: #fff;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.root:nth-child(n) .button {
+  color: #fc8c77;
+}
+
+.root:nth-child(2n) .button {
+  color: #ffad5e;
+}
+
+.root:nth-child(3n) .button {
+  color: #e67bc8;
+}

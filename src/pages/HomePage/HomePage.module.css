@@ -1,0 +1,35 @@
+.root {
+  margin-top: -68px;
+}
+
+.topSection {
+  height: 100vh;
+  width: 100%;
+  background: url('../../assets/main.png') center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titles {
+  text-align: center;
+}
+
+.title {
+  composes: title from global;
+  font-size: 45px;
+  line-height: 67.5px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  composes: paragraph from global;
+  font-size: 19px;
+  line-height: 22.8px;
+  color: #77798c;
+}
+
+.wrapper {
+  display: flex;
+}

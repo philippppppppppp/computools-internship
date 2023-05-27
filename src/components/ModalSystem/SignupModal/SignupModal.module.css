@@ -1,0 +1,14 @@
+.terms {
+  composes: paragraph from global;
+  font-size: 13px;
+  line-height: 15.6px;
+  margin: 30px 0;
+  color: #77798c;
+  text-align: center;
+}
+
+.termsLink {
+  composes: subtitle from global;
+  color: #4285f4;
+  text-decoration: underline;
+}

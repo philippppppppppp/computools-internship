@@ -1,0 +1,10 @@
+.resetPassword {
+  composes: paragraph from global;
+  background: #f7f7f7;
+  margin: 20px -60px -40px;
+  height: 58px;
+  color: #009e7f;
+  line-height: 58px;
+  text-align: center;
+  font-size: 15px;
+}

@@ -1,0 +1,80 @@
+.root {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  composes: paragraph from global;
+  height: 48px;
+  background: #f3f3f3;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0 18px;
+}
+
+.input::placeholder {
+  color: #0d1136, 50%;
+}
+
+.input:focus {
+  padding-left: 17px;
+  border: 1px solid #009e7f;
+}
+
+.error {
+  border: 1px solid #e94d4a;
+  color: #e94d4a;
+  padding-left: 17px;
+  padding-right: 55px;
+}
+
+.error:focus {
+  border-color: #e94d4a;
+}
+
+.errorIcon {
+  width: 25px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.errorMessage {
+  display: none;
+  composes: paragraph from global;
+  position: relative;
+  padding: 3px 15px;
+  border-radius: 6px;
+  color: #fff;
+  background: #555;
+  font-size: 13px;
+  line-height: 15.6px;
+  right: 0px;
+  margin-left: 3px;
+  flex-shrink: 0;
+}
+
+.errorIcon:hover + .errorMessage {
+  display: block;
+}
+
+.errorMessage::before {
+  content: '';
+  display: block;
+  border: 5px solid transparent;
+  border-right: 5px solid #555;
+  position: absolute;
+  left: -7px;
+  top: 6px;
+}
+
+.errorWrapper {
+  position: absolute;
+  top: 13px;
+  left: 100%;
+  margin-left: -43px;
+  display: flex;
+}

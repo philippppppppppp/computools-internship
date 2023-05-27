@@ -1,0 +1,76 @@
+.root {
+  margin-bottom: 12px;
+}
+
+.header {
+  position: relative;
+  cursor: pointer;
+  height: 28px;
+  margin-bottom: 10px;
+}
+
+.header:hover .title {
+  color: #009e7f;
+}
+
+.header:hover .icon {
+  background: #009e7f;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title {
+  composes: subtitle from global;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0a3247;
+  position: absolute;
+  left: 33px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.children {
+  display: none;
+}
+
+.child {
+  composes: subtitle from global;
+  cursor: pointer;
+  height: 26px;
+  font-size: 13px;
+  line-height: 15.6px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 50px;
+  position: relative;
+  color: #77798c;
+}
+
+.child::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  background: #77798c;
+  top: 12px;
+  left: 32px;
+}
+
+.child:hover {
+  color: #009e7f;
+}
+
+.child:hover::before {
+  background: #009e7f;
+}
+
+.openned .children {
+  display: block;
+}

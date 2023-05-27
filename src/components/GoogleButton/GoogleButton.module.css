@@ -1,0 +1,13 @@
+.root {
+  composes: root from '../Button/Button.module.css';
+  width: 100%;
+  background: #4286f4;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 5px;
+}

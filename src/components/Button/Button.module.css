@@ -1,0 +1,13 @@
+.root {
+  composes: subtitle from global;
+  display: block;
+  height: 37px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #fff;
+  background: #009e7f;
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px;
+  cursor: pointer;
+}
